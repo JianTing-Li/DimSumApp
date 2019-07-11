@@ -8,20 +8,50 @@
 
 /* Begin PBXBuildFile section */
 		D605DA9522D78F0D00CB811E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D605DA9422D78F0D00CB811E /* AppDelegate.swift */; };
-		D605DA9722D78F0D00CB811E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D605DA9622D78F0D00CB811E /* ViewController.swift */; };
 		D605DA9A22D78F0E00CB811E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D605DA9822D78F0E00CB811E /* Main.storyboard */; };
 		D605DA9C22D78F1400CB811E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D605DA9B22D78F1400CB811E /* Assets.xcassets */; };
 		D605DA9F22D78F1400CB811E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D605DA9D22D78F1400CB811E /* LaunchScreen.storyboard */; };
+		D605DAA722D792FB00CB811E /* Restaurant.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D605DAA622D792FB00CB811E /* Restaurant.storyboard */; };
+		D605DAAB22D7938800CB811E /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D605DAAA22D7938800CB811E /* TabBarController.swift */; };
+		D605DAB222D79D7A00CB811E /* DimSum.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D605DAB122D79D7A00CB811E /* DimSum.storyboard */; };
+		D605DAB422D79D8800CB811E /* Favorite.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D605DAB322D79D8800CB811E /* Favorite.storyboard */; };
+		D605DAB622D79E3100CB811E /* RestaurantController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D605DAB522D79E3100CB811E /* RestaurantController.swift */; };
+		D605DAB822D79EF100CB811E /* DimSumController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D605DAB722D79EF100CB811E /* DimSumController.swift */; };
+		D605DABA22D79F0700CB811E /* FavoriteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D605DAB922D79F0700CB811E /* FavoriteController.swift */; };
+		D605DABC22D79F1600CB811E /* DimSumDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D605DABB22D79F1600CB811E /* DimSumDetailController.swift */; };
+		D605DABE22D79F5000CB811E /* DimSumReviewsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D605DABD22D79F5000CB811E /* DimSumReviewsController.swift */; };
+		D605DAC322D7A00800CB811E /* DimSumReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = D605DAC222D7A00800CB811E /* DimSumReview.swift */; };
+		D605DAC522D7A02E00CB811E /* RestaurantReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = D605DAC422D7A02E00CB811E /* RestaurantReview.swift */; };
+		D605DAC722D7A08D00CB811E /* RestaurantDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D605DAC622D7A08D00CB811E /* RestaurantDetailController.swift */; };
+		D605DAC922D7A16A00CB811E /* DimSumWriteReviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D605DAC822D7A16A00CB811E /* DimSumWriteReviewController.swift */; };
+		D605DACB22D7A1DD00CB811E /* RestaurantWriteReviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D605DACA22D7A1DD00CB811E /* RestaurantWriteReviewController.swift */; };
+		D605DACD22D7A4E500CB811E /* RestaurantReviewsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D605DACC22D7A4E500CB811E /* RestaurantReviewsController.swift */; };
+		D605DACF22D7A50000CB811E /* RestaurantMapDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D605DACE22D7A50000CB811E /* RestaurantMapDetailController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D605DA9122D78F0D00CB811E /* DimSumApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DimSumApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D605DA9422D78F0D00CB811E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D605DA9622D78F0D00CB811E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D605DA9922D78F0E00CB811E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D605DA9B22D78F1400CB811E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D605DA9E22D78F1400CB811E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D605DAA022D78F1400CB811E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D605DAA622D792FB00CB811E /* Restaurant.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Restaurant.storyboard; sourceTree = "<group>"; };
+		D605DAAA22D7938800CB811E /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		D605DAB122D79D7A00CB811E /* DimSum.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DimSum.storyboard; sourceTree = "<group>"; };
+		D605DAB322D79D8800CB811E /* Favorite.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Favorite.storyboard; sourceTree = "<group>"; };
+		D605DAB522D79E3100CB811E /* RestaurantController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantController.swift; sourceTree = "<group>"; };
+		D605DAB722D79EF100CB811E /* DimSumController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DimSumController.swift; path = ../DimSumController.swift; sourceTree = "<group>"; };
+		D605DAB922D79F0700CB811E /* FavoriteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteController.swift; sourceTree = "<group>"; };
+		D605DABB22D79F1600CB811E /* DimSumDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DimSumDetailController.swift; path = ../DimSumDetailController.swift; sourceTree = "<group>"; };
+		D605DABD22D79F5000CB811E /* DimSumReviewsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DimSumReviewsController.swift; path = ../DimSumReviewsController.swift; sourceTree = "<group>"; };
+		D605DAC222D7A00800CB811E /* DimSumReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DimSumReview.swift; sourceTree = "<group>"; };
+		D605DAC422D7A02E00CB811E /* RestaurantReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantReview.swift; sourceTree = "<group>"; };
+		D605DAC622D7A08D00CB811E /* RestaurantDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailController.swift; sourceTree = "<group>"; };
+		D605DAC822D7A16A00CB811E /* DimSumWriteReviewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DimSumWriteReviewController.swift; sourceTree = "<group>"; };
+		D605DACA22D7A1DD00CB811E /* RestaurantWriteReviewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantWriteReviewController.swift; sourceTree = "<group>"; };
+		D605DACC22D7A4E500CB811E /* RestaurantReviewsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantReviewsController.swift; sourceTree = "<group>"; };
+		D605DACE22D7A50000CB811E /* RestaurantMapDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantMapDetailController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +84,93 @@
 		D605DA9322D78F0D00CB811E /* DimSumApp */ = {
 			isa = PBXGroup;
 			children = (
-				D605DA9422D78F0D00CB811E /* AppDelegate.swift */,
-				D605DA9622D78F0D00CB811E /* ViewController.swift */,
-				D605DA9822D78F0E00CB811E /* Main.storyboard */,
-				D605DA9B22D78F1400CB811E /* Assets.xcassets */,
+				D605DAAE22D79CDC00CB811E /* Controller */,
+				D605DAAD22D79CD700CB811E /* View */,
+				D605DAAC22D79CC700CB811E /* Model */,
+				D605DAAF22D79CEC00CB811E /* Supporting Files */,
 				D605DA9D22D78F1400CB811E /* LaunchScreen.storyboard */,
 				D605DAA022D78F1400CB811E /* Info.plist */,
 			);
 			path = DimSumApp;
+			sourceTree = "<group>";
+		};
+		D605DAAC22D79CC700CB811E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D605DAC222D7A00800CB811E /* DimSumReview.swift */,
+				D605DAC422D7A02E00CB811E /* RestaurantReview.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D605DAAD22D79CD700CB811E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D605DA9822D78F0E00CB811E /* Main.storyboard */,
+				D605DAAA22D7938800CB811E /* TabBarController.swift */,
+				D605DAB022D79D1300CB811E /* Storyboards */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D605DAAE22D79CDC00CB811E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D605DAC122D79FA300CB811E /* Restaurants */,
+				D605DABF22D79F5900CB811E /* DimSum */,
+				D605DAC022D79F9800CB811E /* Favorites */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D605DAAF22D79CEC00CB811E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D605DA9422D78F0D00CB811E /* AppDelegate.swift */,
+				D605DA9B22D78F1400CB811E /* Assets.xcassets */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D605DAB022D79D1300CB811E /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				D605DAA622D792FB00CB811E /* Restaurant.storyboard */,
+				D605DAB122D79D7A00CB811E /* DimSum.storyboard */,
+				D605DAB322D79D8800CB811E /* Favorite.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		D605DABF22D79F5900CB811E /* DimSum */ = {
+			isa = PBXGroup;
+			children = (
+				D605DAB722D79EF100CB811E /* DimSumController.swift */,
+				D605DABB22D79F1600CB811E /* DimSumDetailController.swift */,
+				D605DABD22D79F5000CB811E /* DimSumReviewsController.swift */,
+				D605DAC822D7A16A00CB811E /* DimSumWriteReviewController.swift */,
+			);
+			path = DimSum;
+			sourceTree = "<group>";
+		};
+		D605DAC022D79F9800CB811E /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				D605DAB922D79F0700CB811E /* FavoriteController.swift */,
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
+		D605DAC122D79FA300CB811E /* Restaurants */ = {
+			isa = PBXGroup;
+			children = (
+				D605DAB522D79E3100CB811E /* RestaurantController.swift */,
+				D605DACE22D7A50000CB811E /* RestaurantMapDetailController.swift */,
+				D605DAC622D7A08D00CB811E /* RestaurantDetailController.swift */,
+				D605DACA22D7A1DD00CB811E /* RestaurantWriteReviewController.swift */,
+				D605DACC22D7A4E500CB811E /* RestaurantReviewsController.swift */,
+			);
+			path = Restaurants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,7 +233,10 @@
 			files = (
 				D605DA9F22D78F1400CB811E /* LaunchScreen.storyboard in Resources */,
 				D605DA9C22D78F1400CB811E /* Assets.xcassets in Resources */,
+				D605DAB422D79D8800CB811E /* Favorite.storyboard in Resources */,
+				D605DAA722D792FB00CB811E /* Restaurant.storyboard in Resources */,
 				D605DA9A22D78F0E00CB811E /* Main.storyboard in Resources */,
+				D605DAB222D79D7A00CB811E /* DimSum.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,8 +247,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D605DA9722D78F0D00CB811E /* ViewController.swift in Sources */,
+				D605DACD22D7A4E500CB811E /* RestaurantReviewsController.swift in Sources */,
+				D605DAC922D7A16A00CB811E /* DimSumWriteReviewController.swift in Sources */,
+				D605DABA22D79F0700CB811E /* FavoriteController.swift in Sources */,
+				D605DABE22D79F5000CB811E /* DimSumReviewsController.swift in Sources */,
+				D605DAC522D7A02E00CB811E /* RestaurantReview.swift in Sources */,
+				D605DAB822D79EF100CB811E /* DimSumController.swift in Sources */,
+				D605DAAB22D7938800CB811E /* TabBarController.swift in Sources */,
+				D605DABC22D79F1600CB811E /* DimSumDetailController.swift in Sources */,
+				D605DAC722D7A08D00CB811E /* RestaurantDetailController.swift in Sources */,
 				D605DA9522D78F0D00CB811E /* AppDelegate.swift in Sources */,
+				D605DACF22D7A50000CB811E /* RestaurantMapDetailController.swift in Sources */,
+				D605DAC322D7A00800CB811E /* DimSumReview.swift in Sources */,
+				D605DACB22D7A1DD00CB811E /* RestaurantWriteReviewController.swift in Sources */,
+				D605DAB622D79E3100CB811E /* RestaurantController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

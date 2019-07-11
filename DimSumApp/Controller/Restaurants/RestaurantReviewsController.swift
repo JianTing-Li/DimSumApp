@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  RestaurantReviewsController.swift
 //  DimSumApp
 //
 //  Created by Jian Ting Li on 7/11/19.
@@ -8,14 +8,12 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class RestaurantReviewsController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        print("OK")
+
     }
 
 
 }
-
