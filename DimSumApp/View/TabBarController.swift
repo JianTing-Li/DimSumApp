@@ -12,9 +12,9 @@ class TabBarController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let blueStoryboard = UIStoryboard(name: "Blue", bundle: nil)
-        let blueController = blueStoryboard.instantiateViewController(withIdentifier: "blueController") as! RestaurantController
-        viewControllers = [blueController]
+        let dimSumStoryboard = UIStoryboard(name: "DimSum", bundle: nil)
+        let dimSumController = dimSumStoryboard.instantiateViewController(withIdentifier: "DimSumController") as! DimSumController
+        viewControllers = [dimSumController]
     }
 
 }

@@ -10,14 +10,14 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Dim Sum Controller-->
         <scene sceneID="HsJ-Et-86h">
             <objects>
-                <viewController id="Rpc-8p-OzR" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DimSumController" id="Rpc-8p-OzR" customClass="DimSumController" customModule="DimSumApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="A1G-1c-Kxh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.81697009860000003" green="0.84661611189999997" blue="0.97723214250000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="DEZ-N9-Sy3"/>
                     </view>
                 </viewController>

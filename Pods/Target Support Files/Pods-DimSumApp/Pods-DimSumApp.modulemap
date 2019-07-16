@@ -1,0 +1,6 @@
+framework module Pods_DimSumApp {
+  umbrella header "Pods-DimSumApp-umbrella.h"
+
+  export *
+  module * { export * }
+}
