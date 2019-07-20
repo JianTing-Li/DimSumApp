@@ -13,6 +13,7 @@
 		45830EF822E3B05700D6EF49 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45830EF722E3B05700D6EF49 /* Profile.storyboard */; };
 		45830EFB22E3B11B00D6EF49 /* Reviews.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45830EFA22E3B11B00D6EF49 /* Reviews.storyboard */; };
 		45830EFD22E3BC6A00D6EF49 /* DimSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45830EFC22E3BC6A00D6EF49 /* DimSum.swift */; };
+		45830EFF22E3BE8900D6EF49 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45830EFE22E3BE8900D6EF49 /* User.swift */; };
 		85D00069DD873DE5EB08C718 /* Pods_DimSumApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 928F95D801970B751A5FB8DD /* Pods_DimSumApp.framework */; };
 		D605DA9522D78F0D00CB811E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D605DA9422D78F0D00CB811E /* AppDelegate.swift */; };
 		D605DA9A22D78F0E00CB811E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D605DA9822D78F0E00CB811E /* Main.storyboard */; };
@@ -45,6 +46,7 @@
 		45830EF722E3B05700D6EF49 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		45830EFA22E3B11B00D6EF49 /* Reviews.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Reviews.storyboard; sourceTree = "<group>"; };
 		45830EFC22E3BC6A00D6EF49 /* DimSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DimSum.swift; sourceTree = "<group>"; };
+		45830EFE22E3BE8900D6EF49 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		928F95D801970B751A5FB8DD /* Pods_DimSumApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DimSumApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5B223BF3C28A9CAFFF3145C /* Pods-DimSumApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DimSumApp.debug.xcconfig"; path = "Target Support Files/Pods-DimSumApp/Pods-DimSumApp.debug.xcconfig"; sourceTree = "<group>"; };
 		D605DA9122D78F0D00CB811E /* DimSumApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DimSumApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -166,6 +168,7 @@
 				45830EFC22E3BC6A00D6EF49 /* DimSum.swift */,
 				D605DAC222D7A00800CB811E /* DimSumReview.swift */,
 				D605DAC422D7A02E00CB811E /* RestaurantReview.swift */,
+				45830EFE22E3BE8900D6EF49 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -397,6 +400,7 @@
 				D605DAC522D7A02E00CB811E /* RestaurantReview.swift in Sources */,
 				D605DAB822D79EF100CB811E /* DimSumController.swift in Sources */,
 				45830EFD22E3BC6A00D6EF49 /* DimSum.swift in Sources */,
+				45830EFF22E3BE8900D6EF49 /* User.swift in Sources */,
 				D605DAAB22D7938800CB811E /* TabBarController.swift in Sources */,
 				D605DABC22D79F1600CB811E /* DimSumDetailController.swift in Sources */,
 				D605DAC722D7A08D00CB811E /* RestaurantDetailController.swift in Sources */,
