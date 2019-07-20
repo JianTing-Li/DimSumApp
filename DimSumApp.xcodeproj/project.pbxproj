@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		45830EEF22DFA5BC00D6EF49 /* FoodCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45830EEE22DFA5BC00D6EF49 /* FoodCell.xib */; };
+		45830EF122DFBE9500D6EF49 /* FoodCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45830EF022DFBE9500D6EF49 /* FoodCollectionViewCell.swift */; };
+		45830EF622E3B03600D6EF49 /* DimSumDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45830EF522E3B03600D6EF49 /* DimSumDetail.storyboard */; };
+		45830EF822E3B05700D6EF49 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45830EF722E3B05700D6EF49 /* Profile.storyboard */; };
+		45830EFB22E3B11B00D6EF49 /* Reviews.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45830EFA22E3B11B00D6EF49 /* Reviews.storyboard */; };
+		45830EFD22E3BC6A00D6EF49 /* DimSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45830EFC22E3BC6A00D6EF49 /* DimSum.swift */; };
+		45830EFF22E3BE8900D6EF49 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45830EFE22E3BE8900D6EF49 /* User.swift */; };
+		45830F0222E3C30100D6EF49 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45830F0122E3C30100D6EF49 /* AuthService.swift */; };
+		45830F0422E3C31000D6EF49 /* DBService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45830F0322E3C31000D6EF49 /* DBService.swift */; };
+		45830F0622E3C31C00D6EF49 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45830F0522E3C31C00D6EF49 /* StorageService.swift */; };
 		85D00069DD873DE5EB08C718 /* Pods_DimSumApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 928F95D801970B751A5FB8DD /* Pods_DimSumApp.framework */; };
 		D605DA9522D78F0D00CB811E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D605DA9422D78F0D00CB811E /* AppDelegate.swift */; };
 		D605DA9A22D78F0E00CB811E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D605DA9822D78F0E00CB811E /* Main.storyboard */; };
@@ -33,6 +43,16 @@
 
 /* Begin PBXFileReference section */
 		0F5838576BC2CB1EF0B01A7A /* Pods-DimSumApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DimSumApp.release.xcconfig"; path = "Target Support Files/Pods-DimSumApp/Pods-DimSumApp.release.xcconfig"; sourceTree = "<group>"; };
+		45830EEE22DFA5BC00D6EF49 /* FoodCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FoodCell.xib; sourceTree = "<group>"; };
+		45830EF022DFBE9500D6EF49 /* FoodCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCollectionViewCell.swift; sourceTree = "<group>"; };
+		45830EF522E3B03600D6EF49 /* DimSumDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DimSumDetail.storyboard; sourceTree = "<group>"; };
+		45830EF722E3B05700D6EF49 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		45830EFA22E3B11B00D6EF49 /* Reviews.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Reviews.storyboard; sourceTree = "<group>"; };
+		45830EFC22E3BC6A00D6EF49 /* DimSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DimSum.swift; sourceTree = "<group>"; };
+		45830EFE22E3BE8900D6EF49 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		45830F0122E3C30100D6EF49 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		45830F0322E3C31000D6EF49 /* DBService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBService.swift; sourceTree = "<group>"; };
+		45830F0522E3C31C00D6EF49 /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
 		928F95D801970B751A5FB8DD /* Pods_DimSumApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DimSumApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5B223BF3C28A9CAFFF3145C /* Pods-DimSumApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DimSumApp.debug.xcconfig"; path = "Target Support Files/Pods-DimSumApp/Pods-DimSumApp.debug.xcconfig"; sourceTree = "<group>"; };
 		D605DA9122D78F0D00CB811E /* DimSumApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DimSumApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,8 +98,52 @@
 				D5B223BF3C28A9CAFFF3145C /* Pods-DimSumApp.debug.xcconfig */,
 				0F5838576BC2CB1EF0B01A7A /* Pods-DimSumApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		45830EF222E3AF6C00D6EF49 /* Restaurant */ = {
+			isa = PBXGroup;
+			children = (
+				D605DAA622D792FB00CB811E /* Restaurant.storyboard */,
+			);
+			path = Restaurant;
+			sourceTree = "<group>";
+		};
+		45830EF322E3AFD000D6EF49 /* DimSum */ = {
+			isa = PBXGroup;
+			children = (
+				D605DAB122D79D7A00CB811E /* DimSum.storyboard */,
+				45830EEE22DFA5BC00D6EF49 /* FoodCell.xib */,
+				45830EF022DFBE9500D6EF49 /* FoodCollectionViewCell.swift */,
+				45830EF522E3B03600D6EF49 /* DimSumDetail.storyboard */,
+			);
+			path = DimSum;
+			sourceTree = "<group>";
+		};
+		45830EF422E3AFE000D6EF49 /* FavoriteNProfile */ = {
+			isa = PBXGroup;
+			children = (
+				D605DAB322D79D8800CB811E /* Favorite.storyboard */,
+				45830EF722E3B05700D6EF49 /* Profile.storyboard */,
+			);
+			path = FavoriteNProfile;
+			sourceTree = "<group>";
+		};
+		45830EF922E3B07600D6EF49 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		45830F0022E3C2C000D6EF49 /* Firebase Services */ = {
+			isa = PBXGroup;
+			children = (
+				45830F0122E3C30100D6EF49 /* AuthService.swift */,
+				45830F0322E3C31000D6EF49 /* DBService.swift */,
+				45830F0522E3C31C00D6EF49 /* StorageService.swift */,
+			);
+			path = "Firebase Services";
 			sourceTree = "<group>";
 		};
 		D605DA8822D78F0D00CB811E = {
@@ -103,6 +167,7 @@
 		D605DA9322D78F0D00CB811E /* DimSumApp */ = {
 			isa = PBXGroup;
 			children = (
+				45830F0022E3C2C000D6EF49 /* Firebase Services */,
 				D605DAAE22D79CDC00CB811E /* Controller */,
 				D605DAAD22D79CD700CB811E /* View */,
 				D605DAAC22D79CC700CB811E /* Model */,
@@ -117,8 +182,10 @@
 		D605DAAC22D79CC700CB811E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				45830EFC22E3BC6A00D6EF49 /* DimSum.swift */,
 				D605DAC222D7A00800CB811E /* DimSumReview.swift */,
 				D605DAC422D7A02E00CB811E /* RestaurantReview.swift */,
+				45830EFE22E3BE8900D6EF49 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -126,9 +193,13 @@
 		D605DAAD22D79CD700CB811E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				45830EF922E3B07600D6EF49 /* Login */,
 				D605DA9822D78F0E00CB811E /* Main.storyboard */,
 				D605DAAA22D7938800CB811E /* TabBarController.swift */,
-				D605DAB022D79D1300CB811E /* Storyboards */,
+				45830EFA22E3B11B00D6EF49 /* Reviews.storyboard */,
+				45830EF322E3AFD000D6EF49 /* DimSum */,
+				45830EF222E3AF6C00D6EF49 /* Restaurant */,
+				45830EF422E3AFE000D6EF49 /* FavoriteNProfile */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -150,16 +221,6 @@
 				D605DA9B22D78F1400CB811E /* Assets.xcassets */,
 			);
 			path = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		D605DAB022D79D1300CB811E /* Storyboards */ = {
-			isa = PBXGroup;
-			children = (
-				D605DAA622D792FB00CB811E /* Restaurant.storyboard */,
-				D605DAB122D79D7A00CB811E /* DimSum.storyboard */,
-				D605DAB322D79D8800CB811E /* Favorite.storyboard */,
-			);
-			path = Storyboards;
 			sourceTree = "<group>";
 		};
 		D605DABF22D79F5900CB811E /* DimSum */ = {
@@ -261,11 +322,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45830EF622E3B03600D6EF49 /* DimSumDetail.storyboard in Resources */,
 				D605DA9F22D78F1400CB811E /* LaunchScreen.storyboard in Resources */,
+				45830EF822E3B05700D6EF49 /* Profile.storyboard in Resources */,
 				D605DA9C22D78F1400CB811E /* Assets.xcassets in Resources */,
+				45830EFB22E3B11B00D6EF49 /* Reviews.storyboard in Resources */,
 				D605DAB422D79D8800CB811E /* Favorite.storyboard in Resources */,
 				D605DAA722D792FB00CB811E /* Restaurant.storyboard in Resources */,
 				D605DA9A22D78F0E00CB811E /* Main.storyboard in Resources */,
+				45830EEF22DFA5BC00D6EF49 /* FoodCell.xib in Resources */,
 				D605DAB222D79D7A00CB811E /* DimSum.storyboard in Resources */,
 				D605DAD122DE575200CB811E /* GoogleService-Info.plist in Resources */,
 			);
@@ -348,13 +413,19 @@
 				D605DACD22D7A4E500CB811E /* RestaurantReviewsController.swift in Sources */,
 				D605DAC922D7A16A00CB811E /* DimSumWriteReviewController.swift in Sources */,
 				D605DABA22D79F0700CB811E /* FavoriteController.swift in Sources */,
+				45830F0222E3C30100D6EF49 /* AuthService.swift in Sources */,
 				D605DABE22D79F5000CB811E /* DimSumReviewsController.swift in Sources */,
+				45830F0622E3C31C00D6EF49 /* StorageService.swift in Sources */,
+				45830F0422E3C31000D6EF49 /* DBService.swift in Sources */,
 				D605DAC522D7A02E00CB811E /* RestaurantReview.swift in Sources */,
 				D605DAB822D79EF100CB811E /* DimSumController.swift in Sources */,
+				45830EFD22E3BC6A00D6EF49 /* DimSum.swift in Sources */,
+				45830EFF22E3BE8900D6EF49 /* User.swift in Sources */,
 				D605DAAB22D7938800CB811E /* TabBarController.swift in Sources */,
 				D605DABC22D79F1600CB811E /* DimSumDetailController.swift in Sources */,
 				D605DAC722D7A08D00CB811E /* RestaurantDetailController.swift in Sources */,
 				D605DA9522D78F0D00CB811E /* AppDelegate.swift in Sources */,
+				45830EF122DFBE9500D6EF49 /* FoodCollectionViewCell.swift in Sources */,
 				D605DACF22D7A50000CB811E /* RestaurantMapDetailController.swift in Sources */,
 				D605DAC322D7A00800CB811E /* DimSumReview.swift in Sources */,
 				D605DACB22D7A1DD00CB811E /* RestaurantWriteReviewController.swift in Sources */,
