@@ -47,6 +47,8 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
+                <outlet property="chineseFoodLabel" destination="jmb-Ai-zUG" id="OEd-cm-IIn"/>
+                <outlet property="engFoodLabel" destination="NPI-hp-HWZ" id="dtj-2F-hv7"/>
                 <outlet property="foodImageView" destination="eta-yD-Syx" id="x5o-kF-R4N"/>
             </connections>
             <point key="canvasLocation" x="-330.43478260869568" y="-45.535714285714285"/>

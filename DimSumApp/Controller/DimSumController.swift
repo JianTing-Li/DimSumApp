@@ -34,10 +34,10 @@ extension DimSumController: UICollectionViewDataSource {
         guard let foodCell = collectionView.dequeueReusableCell(withReuseIdentifier: "FoodCell", for: indexPath) as? FoodCollectionViewCell else {
             return UICollectionViewCell()
         }
-//        foodCell.chineseFoodLabel.text = testData[indexPath.row]
+        foodCell.chineseFoodLabel.text = testData[indexPath.row]
     return foodCell
     }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return testData.count
     }
 }
