@@ -10,8 +10,9 @@ import UIKit
 
 class DimSumController: UIViewController {
     @IBOutlet weak var foodCollectionView: UICollectionView!
+    @IBOutlet weak var serachBar: UISearchBar!
     
-    let testData = ["Dim Sum 1", "Dim Sum 2", "Dim Sum 3"]
+    var dimSum = DimSum.getAllDimSums()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,10 +36,13 @@ extension DimSumController: UICollectionViewDataSource {
         guard let foodCell = collectionView.dequeueReusableCell(withReuseIdentifier: "FoodCell", for: indexPath) as? FoodCollectionViewCell else {
             return UICollectionViewCell()
         }
-        foodCell.chineseFoodLabel.text = testData[indexPath.row]
+        let selectedDimSum = dimSum[indexPath.row]
+        foodCell.engFoodLabel.text = selectedDimSum.foodEng
+        foodCell.chineseFoodLabel.text = selectedDimSum.foodChi
         return foodCell
     }
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return testData.count
+        return dimSum.count
     }
 }
