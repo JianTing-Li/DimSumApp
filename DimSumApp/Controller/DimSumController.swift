@@ -39,6 +39,9 @@ extension DimSumController: UICollectionViewDataSource {
         let selectedDimSum = dimSum[indexPath.row]
         foodCell.engFoodLabel.text = selectedDimSum.foodEng
         foodCell.chineseFoodLabel.text = selectedDimSum.foodChi
+        let imageName = selectedDimSum.foodEng.components(separatedBy: .whitespaces).joined()
+        print(imageName)
+        foodCell.foodImageView.image = UIImage(named: "\(imageName)0")
         return foodCell
     }
     

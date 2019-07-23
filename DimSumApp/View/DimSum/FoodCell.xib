@@ -16,7 +16,7 @@
             <rect key="frame" x="0.0" y="0.0" width="800" height="500"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eta-yD-Syx">
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eta-yD-Syx">
                     <rect key="frame" x="0.0" y="0.0" width="680" height="350"/>
                     <color key="backgroundColor" red="0.39662368479999999" green="0.54976882000000005" blue="0.93491844830000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 </imageView>
