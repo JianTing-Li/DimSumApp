@@ -13,8 +13,8 @@ class FoodCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var foodImageView: UIImageView!
     @IBOutlet weak var engFoodLabel: UILabel!
     @IBOutlet weak var chineseFoodLabel: UILabel!
+    @IBOutlet weak var avgRatingLabel: UILabel!
     
-
 
 
 
