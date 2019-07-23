@@ -41,6 +41,7 @@
 		D605DACD22D7A4E500CB811E /* RestaurantReviewsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D605DACC22D7A4E500CB811E /* RestaurantReviewsController.swift */; };
 		D605DACF22D7A50000CB811E /* RestaurantMapDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D605DACE22D7A50000CB811E /* RestaurantMapDetailController.swift */; };
 		D605DAD122DE575200CB811E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D605DAD022DE575200CB811E /* GoogleService-Info.plist */; };
+		D66D28D022E688F6000E72B5 /* DimSumReviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66D28CF22E688F6000E72B5 /* DimSumReviewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +83,7 @@
 		D605DACC22D7A4E500CB811E /* RestaurantReviewsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantReviewsController.swift; sourceTree = "<group>"; };
 		D605DACE22D7A50000CB811E /* RestaurantMapDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantMapDetailController.swift; sourceTree = "<group>"; };
 		D605DAD022DE575200CB811E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D66D28CF22E688F6000E72B5 /* DimSumReviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DimSumReviewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,6 +203,7 @@
 				D605DA9822D78F0E00CB811E /* Main.storyboard */,
 				D605DAAA22D7938800CB811E /* TabBarController.swift */,
 				45830EFA22E3B11B00D6EF49 /* Reviews.storyboard */,
+				D66D28CF22E688F6000E72B5 /* DimSumReviewCell.swift */,
 				45830EF322E3AFD000D6EF49 /* DimSum */,
 				45830EF222E3AF6C00D6EF49 /* Restaurant */,
 				45830EF422E3AFE000D6EF49 /* FavoriteNProfile */,
@@ -425,6 +428,7 @@
 				45830F0622E3C31C00D6EF49 /* StorageService.swift in Sources */,
 				45830F0422E3C31000D6EF49 /* DBService.swift in Sources */,
 				D605DAC522D7A02E00CB811E /* RestaurantReview.swift in Sources */,
+				D66D28D022E688F6000E72B5 /* DimSumReviewCell.swift in Sources */,
 				D605DAB822D79EF100CB811E /* DimSumController.swift in Sources */,
 				45830EFD22E3BC6A00D6EF49 /* DimSum.swift in Sources */,
 				45830EFF22E3BE8900D6EF49 /* User.swift in Sources */,

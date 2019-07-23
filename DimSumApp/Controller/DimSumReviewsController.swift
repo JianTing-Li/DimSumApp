@@ -8,12 +8,12 @@
 
 import UIKit
 
-class DimSumReviewsController: UIViewController {
+class DimSumReviewsController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
     }
     
-
+    
 }
