@@ -40,11 +40,17 @@
                                 <rect key="frame" x="80.666666666666671" y="163.66666666666666" width="46" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="🙎🏻‍♂️🗣"/>
+                                <connections>
+                                    <action selector="playCantonese:" destination="ciP-pg-Lru" eventType="touchUpInside" id="Fjo-a0-Jl6"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sSl-50-xzk">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sSl-50-xzk">
                                 <rect key="frame" x="287.66666666666669" y="163.66666666666666" width="46" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="👧🏾🗣"/>
+                                <connections>
+                                    <action selector="playCantonese:" destination="ciP-pg-Lru" eventType="touchUpInside" id="Bhq-Iu-TGv"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T8H-Ql-tv4">
                                 <rect key="frame" x="125" y="661" width="164" height="55"/>
@@ -55,9 +61,12 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <state key="normal" title="Reviews"/>
+                                <connections>
+                                    <action selector="openReviewsScreen:" destination="ciP-pg-Lru" eventType="touchUpInside" id="cop-tn-cFg"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="sNB-SC-Tpj">
-                                <rect key="frame" x="16" y="453.66666666666669" width="382" height="132.66666666666657"/>
+                                <rect key="frame" x="16" y="453.66666666666669" width="382" height="132.66666666666669"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -101,8 +110,19 @@
                         <viewLayoutGuide key="safeArea" id="3cz-rT-727"/>
                     </view>
                     <navigationItem key="navigationItem" id="c0Q-XH-wbg">
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="like" id="ekY-gT-ITC"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="like" id="ekY-gT-ITC">
+                            <connections>
+                                <action selector="favoriteDimSum:" destination="ciP-pg-Lru" id="c2p-9M-NHL"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="chineseLabel" destination="i03-LW-S09" id="Y5S-Xx-Hk6"/>
+                        <outlet property="dimSumDescriptionTextView" destination="sNB-SC-Tpj" id="HFW-yc-fa0"/>
+                        <outlet property="dimSumImage" destination="974-WN-VqP" id="Hgl-wD-E3k"/>
+                        <outlet property="dimSumRating" destination="1we-Cy-ISY" id="32f-aM-AE7"/>
+                        <outlet property="engLabel" destination="NMv-pt-jSo" id="t9e-GE-1zl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wO9-uA-Io4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
