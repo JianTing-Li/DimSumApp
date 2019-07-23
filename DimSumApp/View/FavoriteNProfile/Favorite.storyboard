@@ -61,7 +61,7 @@
         <!--Navigation Controller-->
         <scene sceneID="g6q-pc-sd1">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="P9Z-wN-crh" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="FavoriteDimNav" automaticallyAdjustsScrollViewInsets="NO" id="P9Z-wN-crh" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Cmu-o6-Y03">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
