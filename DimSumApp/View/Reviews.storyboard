@@ -1,7 +1,159 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <scenes/>
+    <scenes>
+        <!--Dim Sum Reviews Controller-->
+        <scene sceneID="STe-tm-gnw">
+            <objects>
+                <tableViewController id="pVk-Hx-LHh" customClass="DimSumReviewsController" customModule="DimSumApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="AJl-27-CcI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DimSumReviewCell" rowHeight="163" id="gqn-jQ-LM9" customClass="DimSumReviewCell" customModule="DimSumApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="163"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gqn-jQ-LM9" id="UJJ-DB-sMt">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="162.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="749" scrollEnabled="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="JiR-HZ-L7g">
+                                            <rect key="frame" x="20" y="38" width="374" height="114"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        </textView>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mR5-Ec-Rsw" customClass="CosmosView" customModule="Cosmos">
+                                            <rect key="frame" x="20" y="11" width="120" height="20"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="mR5-Ec-Rsw" firstAttribute="top" secondItem="UJJ-DB-sMt" secondAttribute="topMargin" id="886-3W-CRl"/>
+                                        <constraint firstItem="mR5-Ec-Rsw" firstAttribute="leading" secondItem="UJJ-DB-sMt" secondAttribute="leadingMargin" id="OSC-Ih-Eyg"/>
+                                        <constraint firstItem="JiR-HZ-L7g" firstAttribute="leading" secondItem="UJJ-DB-sMt" secondAttribute="leadingMargin" id="PGS-4w-5ID"/>
+                                        <constraint firstItem="JiR-HZ-L7g" firstAttribute="trailing" secondItem="UJJ-DB-sMt" secondAttribute="trailingMargin" id="ldM-Vn-cTd"/>
+                                        <constraint firstItem="JiR-HZ-L7g" firstAttribute="bottom" secondItem="UJJ-DB-sMt" secondAttribute="bottomMargin" id="rU7-GH-y4M"/>
+                                        <constraint firstItem="JiR-HZ-L7g" firstAttribute="top" secondItem="mR5-Ec-Rsw" secondAttribute="bottom" constant="7" id="uWu-le-Mih"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="rating" destination="mR5-Ec-Rsw" id="CbP-Zu-Sgs"/>
+                                    <outlet property="reviewTextView" destination="JiR-HZ-L7g" id="CsX-hq-Uvy"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="pVk-Hx-LHh" id="oNk-cu-x7z"/>
+                            <outlet property="delegate" destination="pVk-Hx-LHh" id="HE1-oY-VaK"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="QL3-W8-sOe">
+                        <barButtonItem key="leftBarButtonItem" title="Dismiss" id="Lsm-bL-gKT"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="compose" id="bs9-VQ-loK">
+                            <connections>
+                                <segue destination="nPG-5e-zOK" kind="presentation" id="Z7r-mL-4Cl"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tog-vb-GvR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="465.21739130434787" y="-117.1875"/>
+        </scene>
+        <!--Dim Sum Write Review Controller-->
+        <scene sceneID="18Z-3f-RaI">
+            <objects>
+                <viewController id="UKl-VG-8uZ" customClass="DimSumWriteReviewController" customModule="DimSumApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lZr-PQ-Tdf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Iwj-Dm-F5i">
+                                <rect key="frame" x="20" y="290" width="374" height="269"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6V4-ym-3p3" customClass="CosmosView" customModule="Cosmos">
+                                <rect key="frame" x="84.5" y="215" width="245" height="45"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                                        <real key="value" value="45"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Iwj-Dm-F5i" firstAttribute="leading" secondItem="cY7-xY-FC8" secondAttribute="leading" constant="20" id="1nZ-hz-Z0F"/>
+                            <constraint firstItem="Iwj-Dm-F5i" firstAttribute="top" secondItem="6V4-ym-3p3" secondAttribute="bottom" constant="30" id="RyV-Zk-gZR"/>
+                            <constraint firstItem="Iwj-Dm-F5i" firstAttribute="height" secondItem="lZr-PQ-Tdf" secondAttribute="height" multiplier="0.3" id="gmd-63-BB6"/>
+                            <constraint firstItem="cY7-xY-FC8" firstAttribute="trailing" secondItem="Iwj-Dm-F5i" secondAttribute="trailing" constant="20" id="mPo-sB-gcz"/>
+                            <constraint firstItem="6V4-ym-3p3" firstAttribute="centerY" secondItem="cY7-xY-FC8" secondAttribute="centerY" multiplier="0.5" id="nAL-Tl-brh"/>
+                            <constraint firstItem="6V4-ym-3p3" firstAttribute="centerX" secondItem="cY7-xY-FC8" secondAttribute="centerX" id="nwh-Ac-gON"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="cY7-xY-FC8"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="vKe-nT-4tV">
+                        <barButtonItem key="leftBarButtonItem" title="Item" systemItem="cancel" id="Brr-yZ-J5V"/>
+                        <barButtonItem key="rightBarButtonItem" title="Post" id="X3l-G1-AOr"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="832-ei-X10" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1373.913043478261" y="-805.58035714285711"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="lL0-BG-pOP">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mxv-Dy-48B" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="V2J-0y-oxT">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="pVk-Hx-LHh" kind="relationship" relationship="rootViewController" id="mcz-Bj-Pzw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mx9-g0-gbp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-444.92753623188412" y="-117.1875"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="YoX-em-JpF">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nPG-5e-zOK" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8vt-jc-jHA">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="UKl-VG-8uZ" kind="relationship" relationship="rootViewController" id="Te8-JZ-8Hy"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SNN-II-e6F" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="465" y="-805"/>
+        </scene>
+    </scenes>
 </document>

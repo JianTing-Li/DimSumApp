@@ -9,9 +9,10 @@
 import UIKit
 
 class DimSumController: UIViewController {
-
     @IBOutlet weak var foodCollectionView: UICollectionView!
+    
     let testData = ["Dim Sum 1", "Dim Sum 2", "Dim Sum 3"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let nib = UINib.init(nibName: "FoodCell", bundle: nil)
@@ -35,7 +36,7 @@ extension DimSumController: UICollectionViewDataSource {
             return UICollectionViewCell()
         }
         foodCell.chineseFoodLabel.text = testData[indexPath.row]
-    return foodCell
+        return foodCell
     }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return testData.count
