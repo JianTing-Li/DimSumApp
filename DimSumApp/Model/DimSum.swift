@@ -24,16 +24,7 @@ struct DimSum {
     let dessert: Bool
     let vegetarian: Bool
     
-    init(foodEng: String, foodChi: String, category: DimSumCategory, foodDescription: String, dessert: Bool, vegetarian: Bool) {
-        self.foodEng = foodEng
-        self.foodChi = foodChi
-        self.category = category
-        self.foodDescription = foodDescription
-        self.dessert = dessert
-        self.vegetarian = vegetarian
-    }
-    
-    public func getAllDimSums() -> [DimSum] {
+    static public func getAllDimSums() -> [DimSum] {
         return [
             DimSum(foodEng: "Turnip Cake", foodChi: "萝卜糕", category: DimSumCategory.cake, foodDescription: "Grated turnip with dried shrimp and Chinese sausage.", dessert: false, vegetarian: false),
             DimSum(foodEng: "Shrimp Noodle Rolls", foodChi: "虾肠", category:  DimSumCategory.noodleRolls, foodDescription: "Shrimp wrapped in a rice noodle sheet with soy sauce.", dessert: false, vegetarian: false),

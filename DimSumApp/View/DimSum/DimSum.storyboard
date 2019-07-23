@@ -73,6 +73,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="foodCollectionView" destination="rHv-tc-QSy" id="Mdu-Aj-CRC"/>
+                        <outlet property="serachBar" destination="Yho-eQ-WLb" id="WAy-P3-UqT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5oq-u1-s3e" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -152,7 +153,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LGL-7I-MTg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3802.898550724638" y="116.51785714285714"/>
+            <point key="canvasLocation" x="2862" y="-708"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Lh6-Ss-seH">
@@ -170,7 +171,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2T7-pi-BQ6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2892.753623188406" y="116.51785714285714"/>
+            <point key="canvasLocation" x="1984" y="-708"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="iVd-3i-eDE">
