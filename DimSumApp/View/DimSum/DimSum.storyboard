@@ -175,7 +175,7 @@
         <!--Navigation Controller-->
         <scene sceneID="iVd-3i-eDE">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NIp-t1-P1b" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="DimSumNav" automaticallyAdjustsScrollViewInsets="NO" id="NIp-t1-P1b" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="OGo-wh-UEc">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
