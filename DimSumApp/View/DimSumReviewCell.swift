@@ -7,7 +7,9 @@
 //
 
 import UIKit
+import Cosmos
 
 class DimSumReviewCell: UITableViewCell {
-
+    @IBOutlet weak var rating: CosmosView!
+    @IBOutlet weak var reviewTextView: UITextView!
 }
