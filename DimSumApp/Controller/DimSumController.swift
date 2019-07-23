@@ -9,7 +9,6 @@
 import UIKit
 
 class DimSumController: UIViewController {
-
     @IBOutlet weak var foodCollectionView: UICollectionView!
     let testData = ["Dim Sum 1", "Dim Sum 2", "Dim Sum 3"]
     override func viewDidLoad() {
