@@ -12,4 +12,10 @@ import Cosmos
 class DimSumReviewCell: UITableViewCell {
     @IBOutlet weak var rating: CosmosView!
     @IBOutlet weak var reviewTextView: UITextView!
+    
+    public func configureCell(review: DimSumReview) {
+        reviewTextView.text = review.description
+        rating.settings.updateOnTouch = false
+        rating.rating = review.rating
+    }
 }

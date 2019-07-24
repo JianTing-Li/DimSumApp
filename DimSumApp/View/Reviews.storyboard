@@ -13,7 +13,7 @@
         <!--Dim Sum Reviews Controller-->
         <scene sceneID="STe-tm-gnw">
             <objects>
-                <tableViewController id="pVk-Hx-LHh" customClass="DimSumReviewsController" customModule="DimSumApp" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="DimSumReviewsVC" id="pVk-Hx-LHh" customClass="DimSumReviewsController" customModule="DimSumApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="AJl-27-CcI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -34,13 +34,21 @@
                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                         </textView>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mR5-Ec-Rsw" customClass="CosmosView" customModule="Cosmos">
-                                            <rect key="frame" x="20" y="11" width="120" height="20"/>
+                                            <rect key="frame" x="25" y="11" width="120" height="20"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="totalStars">
+                                                    <integer key="value" value="5"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                                    <real key="value" value="5"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
                                         </view>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="mR5-Ec-Rsw" firstAttribute="top" secondItem="UJJ-DB-sMt" secondAttribute="topMargin" id="886-3W-CRl"/>
-                                        <constraint firstItem="mR5-Ec-Rsw" firstAttribute="leading" secondItem="UJJ-DB-sMt" secondAttribute="leadingMargin" id="OSC-Ih-Eyg"/>
+                                        <constraint firstItem="mR5-Ec-Rsw" firstAttribute="leading" secondItem="UJJ-DB-sMt" secondAttribute="leadingMargin" constant="5" id="OSC-Ih-Eyg"/>
                                         <constraint firstItem="JiR-HZ-L7g" firstAttribute="leading" secondItem="UJJ-DB-sMt" secondAttribute="leadingMargin" id="PGS-4w-5ID"/>
                                         <constraint firstItem="JiR-HZ-L7g" firstAttribute="trailing" secondItem="UJJ-DB-sMt" secondAttribute="trailingMargin" id="ldM-Vn-cTd"/>
                                         <constraint firstItem="JiR-HZ-L7g" firstAttribute="bottom" secondItem="UJJ-DB-sMt" secondAttribute="bottomMargin" id="rU7-GH-y4M"/>
@@ -59,13 +67,15 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="QL3-W8-sOe">
-                        <barButtonItem key="leftBarButtonItem" title="Dismiss" id="Lsm-bL-gKT"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="compose" id="bs9-VQ-loK">
                             <connections>
-                                <segue destination="nPG-5e-zOK" kind="presentation" id="Z7r-mL-4Cl"/>
+                                <action selector="goToCreateReviewPage:" destination="pVk-Hx-LHh" id="uXK-ro-dcf"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="dimSumReviewsTableView" destination="AJl-27-CcI" id="aAJ-fQ-Nba"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tog-vb-GvR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -74,20 +84,20 @@
         <!--Dim Sum Write Review Controller-->
         <scene sceneID="18Z-3f-RaI">
             <objects>
-                <viewController id="UKl-VG-8uZ" customClass="DimSumWriteReviewController" customModule="DimSumApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CreateDimReviewVC" id="UKl-VG-8uZ" customClass="DimSumWriteReviewController" customModule="DimSumApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lZr-PQ-Tdf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Iwj-Dm-F5i">
-                                <rect key="frame" x="20" y="290" width="374" height="269"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Iwj-Dm-F5i">
+                                <rect key="frame" x="20" y="232.5" width="374" height="224"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6V4-ym-3p3" customClass="CosmosView" customModule="Cosmos">
-                                <rect key="frame" x="84.5" y="215" width="245" height="45"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6V4-ym-3p3" customClass="CosmosView" customModule="Cosmos">
+                                <rect key="frame" x="84.5" y="167.5" width="245" height="45"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="starSize">
@@ -101,19 +111,31 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Iwj-Dm-F5i" firstAttribute="leading" secondItem="cY7-xY-FC8" secondAttribute="leading" constant="20" id="1nZ-hz-Z0F"/>
-                            <constraint firstItem="Iwj-Dm-F5i" firstAttribute="top" secondItem="6V4-ym-3p3" secondAttribute="bottom" constant="30" id="RyV-Zk-gZR"/>
-                            <constraint firstItem="Iwj-Dm-F5i" firstAttribute="height" secondItem="lZr-PQ-Tdf" secondAttribute="height" multiplier="0.3" id="gmd-63-BB6"/>
-                            <constraint firstItem="cY7-xY-FC8" firstAttribute="trailing" secondItem="Iwj-Dm-F5i" secondAttribute="trailing" constant="20" id="mPo-sB-gcz"/>
-                            <constraint firstItem="6V4-ym-3p3" firstAttribute="centerY" secondItem="cY7-xY-FC8" secondAttribute="centerY" multiplier="0.5" id="nAL-Tl-brh"/>
-                            <constraint firstItem="6V4-ym-3p3" firstAttribute="centerX" secondItem="cY7-xY-FC8" secondAttribute="centerX" id="nwh-Ac-gON"/>
+                            <constraint firstItem="6V4-ym-3p3" firstAttribute="centerY" secondItem="cY7-xY-FC8" secondAttribute="centerY" multiplier="0.4" id="4wD-l3-iMb"/>
+                            <constraint firstItem="cY7-xY-FC8" firstAttribute="trailing" secondItem="Iwj-Dm-F5i" secondAttribute="trailing" constant="20" id="7lc-HQ-mdo"/>
+                            <constraint firstItem="Iwj-Dm-F5i" firstAttribute="leading" secondItem="cY7-xY-FC8" secondAttribute="leading" constant="20" id="Dcw-fk-pMW"/>
+                            <constraint firstItem="Iwj-Dm-F5i" firstAttribute="top" secondItem="6V4-ym-3p3" secondAttribute="bottom" constant="20" id="ULK-0E-CRe"/>
+                            <constraint firstItem="6V4-ym-3p3" firstAttribute="centerX" secondItem="cY7-xY-FC8" secondAttribute="centerX" id="irE-K0-bKh"/>
+                            <constraint firstItem="Iwj-Dm-F5i" firstAttribute="height" secondItem="lZr-PQ-Tdf" secondAttribute="height" multiplier="0.25" id="seT-W5-Te2"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="cY7-xY-FC8"/>
                     </view>
                     <navigationItem key="navigationItem" id="vKe-nT-4tV">
-                        <barButtonItem key="leftBarButtonItem" title="Item" systemItem="cancel" id="Brr-yZ-J5V"/>
-                        <barButtonItem key="rightBarButtonItem" title="Post" id="X3l-G1-AOr"/>
+                        <barButtonItem key="leftBarButtonItem" title="Item" systemItem="cancel" id="Brr-yZ-J5V">
+                            <connections>
+                                <action selector="cancelButtonPressed:" destination="UKl-VG-8uZ" id="Qbx-Xa-cF2"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Post" id="X3l-G1-AOr">
+                            <connections>
+                                <action selector="postButtonPressed:" destination="UKl-VG-8uZ" id="Tf5-jl-Ira"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="rating" destination="6V4-ym-3p3" id="set-dx-6Wq"/>
+                        <outlet property="reviewTextView" destination="Iwj-Dm-F5i" id="e88-4E-5qg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="832-ei-X10" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -122,7 +144,7 @@
         <!--Navigation Controller-->
         <scene sceneID="lL0-BG-pOP">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mxv-Dy-48B" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="DimSumReviewsNav" automaticallyAdjustsScrollViewInsets="NO" id="mxv-Dy-48B" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="V2J-0y-oxT">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -140,7 +162,7 @@
         <!--Navigation Controller-->
         <scene sceneID="YoX-em-JpF">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nPG-5e-zOK" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="CreateDimReviewNav" automaticallyAdjustsScrollViewInsets="NO" id="nPG-5e-zOK" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8vt-jc-jHA">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>

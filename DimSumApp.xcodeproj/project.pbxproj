@@ -47,13 +47,18 @@
 		D66D28E422E772E3000E72B5 /* TurnipCakeM.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D66D28D822E772E2000E72B5 /* TurnipCakeM.mp3 */; };
 		D66D28E522E772E3000E72B5 /* BeefNoodleRollsF.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D66D28D922E772E2000E72B5 /* BeefNoodleRollsF.mp3 */; };
 		D66D28E622E772E3000E72B5 /* Lotus-WrappedStickyRiceF.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D66D28DA22E772E2000E72B5 /* Lotus-WrappedStickyRiceF.mp3 */; };
-		D66D28E722E772E3000E72B5 /* ShrimpNoodelRollsF.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D66D28DB22E772E2000E72B5 /* ShrimpNoodelRollsF.mp3 */; };
+		D66D28E722E772E3000E72B5 /* ShrimpNoodleRollsF.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D66D28DB22E772E2000E72B5 /* ShrimpNoodleRollsF.mp3 */; };
 		D66D28E822E772E3000E72B5 /* TurnipCakeF.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D66D28DC22E772E2000E72B5 /* TurnipCakeF.mp3 */; };
 		D66D28E922E772E3000E72B5 /* FriedSesameBallsM.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D66D28DD22E772E2000E72B5 /* FriedSesameBallsM.mp3 */; };
 		D66D28EA22E772E3000E72B5 /* SweetTofuM.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D66D28DE22E772E2000E72B5 /* SweetTofuM.mp3 */; };
 		D66D28EB22E772E3000E72B5 /* Lotus-WrappedStickyRiceM.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D66D28DF22E772E2000E72B5 /* Lotus-WrappedStickyRiceM.mp3 */; };
 		D66D28EC22E772E3000E72B5 /* BeefNoodleRollsM.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D66D28E022E772E2000E72B5 /* BeefNoodleRollsM.mp3 */; };
 		D66D28ED22E772E3000E72B5 /* ShrimpNoodleRollsM.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D66D28E122E772E2000E72B5 /* ShrimpNoodleRollsM.mp3 */; };
+		D66D28F022E7E9D6000E72B5 /* UserDefaultsKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66D28EF22E7E9D6000E72B5 /* UserDefaultsKeys.swift */; };
+		D6F20C2222E8204B0044560B /* VC+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F20C2122E8204B0044560B /* VC+Extensions.swift */; };
+		D6F20C2422E823F40044560B /* DataPersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F20C2322E823F40044560B /* DataPersistenceManager.swift */; };
+		D6F20C2822E824600044560B /* DimSumReviewsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F20C2722E824600044560B /* DimSumReviewsManager.swift */; };
+		D6F20C2A22E8353B0044560B /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F20C2922E8353B0044560B /* Double+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -101,13 +106,18 @@
 		D66D28D822E772E2000E72B5 /* TurnipCakeM.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = TurnipCakeM.mp3; sourceTree = "<group>"; };
 		D66D28D922E772E2000E72B5 /* BeefNoodleRollsF.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BeefNoodleRollsF.mp3; sourceTree = "<group>"; };
 		D66D28DA22E772E2000E72B5 /* Lotus-WrappedStickyRiceF.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Lotus-WrappedStickyRiceF.mp3"; sourceTree = "<group>"; };
-		D66D28DB22E772E2000E72B5 /* ShrimpNoodelRollsF.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ShrimpNoodelRollsF.mp3; sourceTree = "<group>"; };
+		D66D28DB22E772E2000E72B5 /* ShrimpNoodleRollsF.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ShrimpNoodleRollsF.mp3; sourceTree = "<group>"; };
 		D66D28DC22E772E2000E72B5 /* TurnipCakeF.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = TurnipCakeF.mp3; sourceTree = "<group>"; };
 		D66D28DD22E772E2000E72B5 /* FriedSesameBallsM.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = FriedSesameBallsM.mp3; sourceTree = "<group>"; };
 		D66D28DE22E772E2000E72B5 /* SweetTofuM.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = SweetTofuM.mp3; sourceTree = "<group>"; };
 		D66D28DF22E772E2000E72B5 /* Lotus-WrappedStickyRiceM.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Lotus-WrappedStickyRiceM.mp3"; sourceTree = "<group>"; };
 		D66D28E022E772E2000E72B5 /* BeefNoodleRollsM.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BeefNoodleRollsM.mp3; sourceTree = "<group>"; };
 		D66D28E122E772E2000E72B5 /* ShrimpNoodleRollsM.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ShrimpNoodleRollsM.mp3; sourceTree = "<group>"; };
+		D66D28EF22E7E9D6000E72B5 /* UserDefaultsKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsKeys.swift; sourceTree = "<group>"; };
+		D6F20C2122E8204B0044560B /* VC+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VC+Extensions.swift"; sourceTree = "<group>"; };
+		D6F20C2322E823F40044560B /* DataPersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPersistenceManager.swift; sourceTree = "<group>"; };
+		D6F20C2722E824600044560B /* DimSumReviewsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DimSumReviewsManager.swift; sourceTree = "<group>"; };
+		D6F20C2922E8353B0044560B /* Double+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +207,8 @@
 		D605DA9322D78F0D00CB811E /* DimSumApp */ = {
 			isa = PBXGroup;
 			children = (
+				D6F20C2022E81FF90044560B /* Extensions */,
+				D66D28EE22E7E9A6000E72B5 /* Local Data Management */,
 				45830F0022E3C2C000D6EF49 /* Firebase Services */,
 				D605DAAE22D79CDC00CB811E /* Controller */,
 				D605DAAD22D79CD700CB811E /* View */,
@@ -216,6 +228,7 @@
 				D605DAC222D7A00800CB811E /* DimSumReview.swift */,
 				D605DAC422D7A02E00CB811E /* RestaurantReview.swift */,
 				45830EFE22E3BE8900D6EF49 /* User.swift */,
+				D6F20C2722E824600044560B /* DimSumReviewsManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -297,7 +310,7 @@
 				D66D28DD22E772E2000E72B5 /* FriedSesameBallsM.mp3 */,
 				D66D28DA22E772E2000E72B5 /* Lotus-WrappedStickyRiceF.mp3 */,
 				D66D28DF22E772E2000E72B5 /* Lotus-WrappedStickyRiceM.mp3 */,
-				D66D28DB22E772E2000E72B5 /* ShrimpNoodelRollsF.mp3 */,
+				D66D28DB22E772E2000E72B5 /* ShrimpNoodleRollsF.mp3 */,
 				D66D28E122E772E2000E72B5 /* ShrimpNoodleRollsM.mp3 */,
 				D66D28D722E772E2000E72B5 /* SweetTofuF.mp3 */,
 				D66D28DE22E772E2000E72B5 /* SweetTofuM.mp3 */,
@@ -305,6 +318,24 @@
 				D66D28D822E772E2000E72B5 /* TurnipCakeM.mp3 */,
 			);
 			path = Audios;
+			sourceTree = "<group>";
+		};
+		D66D28EE22E7E9A6000E72B5 /* Local Data Management */ = {
+			isa = PBXGroup;
+			children = (
+				D66D28EF22E7E9D6000E72B5 /* UserDefaultsKeys.swift */,
+				D6F20C2322E823F40044560B /* DataPersistenceManager.swift */,
+			);
+			path = "Local Data Management";
+			sourceTree = "<group>";
+		};
+		D6F20C2022E81FF90044560B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D6F20C2122E8204B0044560B /* VC+Extensions.swift */,
+				D6F20C2922E8353B0044560B /* Double+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		FC30566AF493F7FB199AED6B /* Frameworks */ = {
@@ -384,7 +415,7 @@
 				D605DA9F22D78F1400CB811E /* LaunchScreen.storyboard in Resources */,
 				D66D28EB22E772E3000E72B5 /* Lotus-WrappedStickyRiceM.mp3 in Resources */,
 				45830EF822E3B05700D6EF49 /* Profile.storyboard in Resources */,
-				D66D28E722E772E3000E72B5 /* ShrimpNoodelRollsF.mp3 in Resources */,
+				D66D28E722E772E3000E72B5 /* ShrimpNoodleRollsF.mp3 in Resources */,
 				D66D28E522E772E3000E72B5 /* BeefNoodleRollsF.mp3 in Resources */,
 				D605DA9C22D78F1400CB811E /* Assets.xcassets in Resources */,
 				45830EFB22E3B11B00D6EF49 /* Reviews.storyboard in Resources */,
@@ -479,6 +510,7 @@
 				D605DACD22D7A4E500CB811E /* RestaurantReviewsController.swift in Sources */,
 				D605DAC922D7A16A00CB811E /* DimSumWriteReviewController.swift in Sources */,
 				D605DABA22D79F0700CB811E /* FavoriteController.swift in Sources */,
+				D66D28F022E7E9D6000E72B5 /* UserDefaultsKeys.swift in Sources */,
 				45830F0222E3C30100D6EF49 /* AuthService.swift in Sources */,
 				D605DABE22D79F5000CB811E /* DimSumReviewsController.swift in Sources */,
 				45830F0622E3C31C00D6EF49 /* StorageService.swift in Sources */,
@@ -486,16 +518,20 @@
 				D605DAC522D7A02E00CB811E /* RestaurantReview.swift in Sources */,
 				D66D28D022E688F6000E72B5 /* DimSumReviewCell.swift in Sources */,
 				D605DAB822D79EF100CB811E /* DimSumController.swift in Sources */,
+				D6F20C2222E8204B0044560B /* VC+Extensions.swift in Sources */,
 				45830EFD22E3BC6A00D6EF49 /* DimSum.swift in Sources */,
 				45830EFF22E3BE8900D6EF49 /* User.swift in Sources */,
 				D605DAAB22D7938800CB811E /* TabBarController.swift in Sources */,
+				D6F20C2A22E8353B0044560B /* Double+Extensions.swift in Sources */,
 				D605DABC22D79F1600CB811E /* DimSumDetailController.swift in Sources */,
 				D605DAC722D7A08D00CB811E /* RestaurantDetailController.swift in Sources */,
 				D605DA9522D78F0D00CB811E /* AppDelegate.swift in Sources */,
 				45830EF122DFBE9500D6EF49 /* FoodCollectionViewCell.swift in Sources */,
+				D6F20C2822E824600044560B /* DimSumReviewsManager.swift in Sources */,
 				D605DACF22D7A50000CB811E /* RestaurantMapDetailController.swift in Sources */,
 				D605DAC322D7A00800CB811E /* DimSumReview.swift in Sources */,
 				45830F0C22E6730900D6EF49 /* FilterTableViewCell.swift in Sources */,
+				D6F20C2422E823F40044560B /* DataPersistenceManager.swift in Sources */,
 				D605DACB22D7A1DD00CB811E /* RestaurantWriteReviewController.swift in Sources */,
 				D605DAB622D79E3100CB811E /* RestaurantController.swift in Sources */,
 			);
