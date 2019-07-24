@@ -34,10 +34,19 @@ class DimSumDetailController: UIViewController {
         dimSumImage.image = UIImage.init(named: dimSum.foodEng.components(separatedBy: " ").joined() + "0")
         dimSumDescriptionTextView.text = dimSum.foodDescription
         setRating()
+        setFavoriteIcon()
     }
     
     private func setRating() {
         
+    }
+    
+    private func setFavoriteIcon() {
+        if let _ = favorites[dimSum.foodEng] {
+            navigationItem.rightBarButtonItem?.image = UIImage(named: "like_filled")
+        } else {
+            navigationItem.rightBarButtonItem?.image = UIImage(named: "like")
+        }
     }
     
     private func playAudio(fileName: String, fileType: String) {
@@ -66,7 +75,14 @@ class DimSumDetailController: UIViewController {
     }
     
     @IBAction func favoriteDimSum(_ sender: UIBarButtonItem) {
-        
+        if let _ = favorites[dimSum.foodEng] {
+            favorites[dimSum.foodEng] = nil
+            navigationItem.rightBarButtonItem?.image = UIImage(named: "like")
+        } else {
+            favorites[dimSum.foodEng] = true
+            navigationItem.rightBarButtonItem?.image = UIImage(named: "like_filled")
+        }
+        defaults.set(favorites, forKey: UserDefaultsKeys.dimSumFavorites)
     }
     
     @IBAction func openReviewsScreen(_ sender: UIButton) {

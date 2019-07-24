@@ -55,6 +55,7 @@
 		D66D28EC22E772E3000E72B5 /* BeefNoodleRollsM.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D66D28E022E772E2000E72B5 /* BeefNoodleRollsM.mp3 */; };
 		D66D28ED22E772E3000E72B5 /* ShrimpNoodleRollsM.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D66D28E122E772E2000E72B5 /* ShrimpNoodleRollsM.mp3 */; };
 		D66D28F022E7E9D6000E72B5 /* UserDefaultsKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66D28EF22E7E9D6000E72B5 /* UserDefaultsKeys.swift */; };
+		D6F20C2222E8204B0044560B /* VC+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F20C2122E8204B0044560B /* VC+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -110,6 +111,7 @@
 		D66D28E022E772E2000E72B5 /* BeefNoodleRollsM.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BeefNoodleRollsM.mp3; sourceTree = "<group>"; };
 		D66D28E122E772E2000E72B5 /* ShrimpNoodleRollsM.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ShrimpNoodleRollsM.mp3; sourceTree = "<group>"; };
 		D66D28EF22E7E9D6000E72B5 /* UserDefaultsKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsKeys.swift; sourceTree = "<group>"; };
+		D6F20C2122E8204B0044560B /* VC+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VC+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +201,7 @@
 		D605DA9322D78F0D00CB811E /* DimSumApp */ = {
 			isa = PBXGroup;
 			children = (
+				D6F20C2022E81FF90044560B /* Extensions */,
 				D66D28EE22E7E9A6000E72B5 /* Local Data Management */,
 				45830F0022E3C2C000D6EF49 /* Firebase Services */,
 				D605DAAE22D79CDC00CB811E /* Controller */,
@@ -316,6 +319,14 @@
 				D66D28EF22E7E9D6000E72B5 /* UserDefaultsKeys.swift */,
 			);
 			path = "Local Data Management";
+			sourceTree = "<group>";
+		};
+		D6F20C2022E81FF90044560B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D6F20C2122E8204B0044560B /* VC+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		FC30566AF493F7FB199AED6B /* Frameworks */ = {
@@ -498,6 +509,7 @@
 				D605DAC522D7A02E00CB811E /* RestaurantReview.swift in Sources */,
 				D66D28D022E688F6000E72B5 /* DimSumReviewCell.swift in Sources */,
 				D605DAB822D79EF100CB811E /* DimSumController.swift in Sources */,
+				D6F20C2222E8204B0044560B /* VC+Extensions.swift in Sources */,
 				45830EFD22E3BC6A00D6EF49 /* DimSum.swift in Sources */,
 				45830EFF22E3BE8900D6EF49 /* User.swift in Sources */,
 				D605DAAB22D7938800CB811E /* TabBarController.swift in Sources */,
