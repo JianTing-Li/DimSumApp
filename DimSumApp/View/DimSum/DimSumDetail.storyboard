@@ -36,7 +36,7 @@
                                     <constraint firstAttribute="width" secondItem="974-WN-VqP" secondAttribute="height" multiplier="16:9" id="RvF-ts-owj"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bNz-xd-8Ma">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bNz-xd-8Ma">
                                 <rect key="frame" x="80.666666666666671" y="163.66666666666666" width="46" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="🙎🏻‍♂️🗣"/>
@@ -44,7 +44,7 @@
                                     <action selector="playCantonese:" destination="ciP-pg-Lru" eventType="touchUpInside" id="Fjo-a0-Jl6"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sSl-50-xzk">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sSl-50-xzk">
                                 <rect key="frame" x="287.66666666666669" y="163.66666666666666" width="46" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="👧🏾🗣"/>
@@ -126,7 +126,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wO9-uA-Io4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="775.20000000000005" y="109.29535232383809"/>
+            <point key="canvasLocation" x="773.91304347826087" y="109.23913043478262"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="x1z-n6-RpT">

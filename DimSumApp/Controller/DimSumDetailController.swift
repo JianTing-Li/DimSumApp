@@ -8,6 +8,7 @@
 
 import UIKit
 import Cosmos
+import AVFoundation
 
 class DimSumDetailController: UIViewController {
     @IBOutlet weak var engLabel: UILabel!
@@ -17,9 +18,14 @@ class DimSumDetailController: UIViewController {
     @IBOutlet weak var dimSumRating: CosmosView!
     
     public var dimSum: DimSum!
+    private var audioPlayer: AVAudioPlayer?
+    
+    let defaults = UserDefaults.standard
+    private lazy var favorites = defaults.object(forKey: UserDefaultsKeys.dimSumFavorites) as? [String : Bool] ?? [String : Bool]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        configureUI()
     }
     
     private func configureUI() {
@@ -34,11 +40,32 @@ class DimSumDetailController: UIViewController {
         
     }
     
-    @IBAction func favoriteDimSum(_ sender: UIBarButtonItem) {
-        
+    private func playAudio(fileName: String, fileType: String) {
+        if let soundUrl = Bundle.main.url(forResource: fileName, withExtension: fileType) {
+            do {
+                audioPlayer = try AVAudioPlayer(contentsOf: soundUrl)
+            } catch {
+                print(error)
+            }
+        } else {
+            print("No URL for Sound")
+        }
     }
     
     @IBAction func playCantonese(_ sender: UIButton) {
+        let dimSumAudioFileName = dimSum.foodEng.components(separatedBy: " ").joined()
+        switch sender.tag {
+        case 0: // female
+            playAudio(fileName: "\(dimSumAudioFileName)F", fileType: "mp3")
+        case 1: // male
+            playAudio(fileName: "\(dimSumAudioFileName)M", fileType: "mp3")
+        default:
+            break
+        }
+        audioPlayer?.play()
+    }
+    
+    @IBAction func favoriteDimSum(_ sender: UIBarButtonItem) {
         
     }
     
