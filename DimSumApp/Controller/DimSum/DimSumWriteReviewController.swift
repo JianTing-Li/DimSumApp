@@ -15,11 +15,13 @@ class DimSumWriteReviewController: UIViewController {
     @IBOutlet weak var reviewTextView: UITextView!
     
     private var capturedRating: Double?
+    public var dimSum: DimSum!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         configureTextView()
         configureRatingCosmos()
+        title = dimSum.foodEng
     }
     
     private func configureRatingCosmos() {
@@ -44,7 +46,9 @@ class DimSumWriteReviewController: UIViewController {
                 showAlert(title: "Missing Fields", message: "Make sure you give a rating and review.")
                 return
         }
-        let dimSumReview = DimSumReview(dimSumFoodEng: <#T##String#>, userID: nil, reviewID: nil, rating: capturedRating, description: reviewDescription, location: nil)
+        let dimSumReview = DimSumReview(dimSumFoodEng: dimSum.foodEng, userID: nil, reviewID: nil, rating: capturedRating, description: reviewDescription, location: nil)
+        DimSumReviewsManager.addNewReview(review: dimSumReview)
+        dismiss(animated: true, completion: nil)
     }
     
 }
