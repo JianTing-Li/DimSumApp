@@ -49,5 +49,6 @@ final class DimSumReviewsManager {
     static func deleteReview(at index: Int) {
         reviews.remove(at: index)
         saveReviewsToDocumentDirectory()
+        //Comment
     }
 }
