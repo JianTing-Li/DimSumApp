@@ -54,6 +54,9 @@ extension DimSumController: UICollectionViewDataSource {
             return UICollectionViewCell()
         }
         let selectedDimSum = allDimSums[indexPath.row]
+        foodCell.layer.cornerRadius = 3
+        foodCell.layer.borderColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
+        foodCell.layer.borderWidth = 5
         foodCell.configureCell(selectedDimSum: selectedDimSum, allReviews: allReviews)
         return foodCell
     }

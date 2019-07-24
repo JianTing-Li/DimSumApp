@@ -19,6 +19,7 @@
 		45830F0622E3C31C00D6EF49 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45830F0522E3C31C00D6EF49 /* StorageService.swift */; };
 		45830F0A22E671B600D6EF49 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45830F0922E671B600D6EF49 /* FilterViewController.swift */; };
 		45830F0C22E6730900D6EF49 /* FilterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45830F0B22E6730900D6EF49 /* FilterTableViewCell.swift */; };
+		45830F0E22E8E73A00D6EF49 /* IBDesignableViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45830F0D22E8E73A00D6EF49 /* IBDesignableViews.swift */; };
 		85D00069DD873DE5EB08C718 /* Pods_DimSumApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 928F95D801970B751A5FB8DD /* Pods_DimSumApp.framework */; };
 		D605DA9522D78F0D00CB811E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D605DA9422D78F0D00CB811E /* AppDelegate.swift */; };
 		D605DA9A22D78F0E00CB811E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D605DA9822D78F0E00CB811E /* Main.storyboard */; };
@@ -75,6 +76,7 @@
 		45830F0522E3C31C00D6EF49 /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
 		45830F0922E671B600D6EF49 /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
 		45830F0B22E6730900D6EF49 /* FilterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterTableViewCell.swift; sourceTree = "<group>"; };
+		45830F0D22E8E73A00D6EF49 /* IBDesignableViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBDesignableViews.swift; sourceTree = "<group>"; };
 		928F95D801970B751A5FB8DD /* Pods_DimSumApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DimSumApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5B223BF3C28A9CAFFF3145C /* Pods-DimSumApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DimSumApp.debug.xcconfig"; path = "Target Support Files/Pods-DimSumApp/Pods-DimSumApp.debug.xcconfig"; sourceTree = "<group>"; };
 		D605DA9122D78F0D00CB811E /* DimSumApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DimSumApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -156,6 +158,7 @@
 				45830EEE22DFA5BC00D6EF49 /* FoodCell.xib */,
 				45830EF022DFBE9500D6EF49 /* FoodCollectionViewCell.swift */,
 				45830EF522E3B03600D6EF49 /* DimSumDetail.storyboard */,
+				45830F0D22E8E73A00D6EF49 /* IBDesignableViews.swift */,
 			);
 			path = DimSum;
 			sourceTree = "<group>";
@@ -523,6 +526,7 @@
 				45830EFF22E3BE8900D6EF49 /* User.swift in Sources */,
 				D605DAAB22D7938800CB811E /* TabBarController.swift in Sources */,
 				D6F20C2A22E8353B0044560B /* Double+Extensions.swift in Sources */,
+				45830F0E22E8E73A00D6EF49 /* IBDesignableViews.swift in Sources */,
 				D605DABC22D79F1600CB811E /* DimSumDetailController.swift in Sources */,
 				D605DAC722D7A08D00CB811E /* RestaurantDetailController.swift in Sources */,
 				D605DA9522D78F0D00CB811E /* AppDelegate.swift in Sources */,

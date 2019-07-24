@@ -16,18 +16,18 @@
             <rect key="frame" x="0.0" y="0.0" width="800" height="500"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eta-yD-Syx">
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eta-yD-Syx" customClass="CornerImageView" customModule="DimSumApp" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="0.0" width="680" height="350"/>
                     <color key="backgroundColor" red="0.39662368479999999" green="0.54976882000000005" blue="0.93491844830000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="English" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NPI-hp-HWZ">
-                    <rect key="frame" x="0.0" y="358" width="60.5" height="21"/>
+                    <rect key="frame" x="29" y="358" width="60.5" height="21"/>
                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chinese" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jmb-Ai-zUG">
-                    <rect key="frame" x="0.0" y="396" width="64" height="21"/>
+                    <rect key="frame" x="29" y="396" width="64" height="21"/>
                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -42,7 +42,7 @@
             </subviews>
             <color key="backgroundColor" red="0.75498616610000002" green="0.83517791060000002" blue="0.94582804570000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="jmb-Ai-zUG" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="5zi-b5-VPs"/>
+                <constraint firstItem="jmb-Ai-zUG" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="29" id="5zi-b5-VPs"/>
                 <constraint firstItem="hxW-17-7Kf" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="9fz-Ir-SxS"/>
                 <constraint firstItem="eta-yD-Syx" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.85" id="DNy-4a-rWm"/>
                 <constraint firstItem="hxW-17-7Kf" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="EDJ-eK-tja"/>
@@ -50,7 +50,7 @@
                 <constraint firstItem="eta-yD-Syx" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="RG5-ZC-xd8"/>
                 <constraint firstItem="eta-yD-Syx" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.7" id="ZNs-Xa-Xgw"/>
                 <constraint firstAttribute="top" secondItem="eta-yD-Syx" secondAttribute="top" id="bcB-rZ-dNv"/>
-                <constraint firstItem="NPI-hp-HWZ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="fQO-Nr-M14"/>
+                <constraint firstItem="NPI-hp-HWZ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="29" id="fQO-Nr-M14"/>
                 <constraint firstItem="hxW-17-7Kf" firstAttribute="height" secondItem="eta-yD-Syx" secondAttribute="height" multiplier="0.15" id="jm9-Hw-E95"/>
                 <constraint firstItem="hxW-17-7Kf" firstAttribute="leading" secondItem="eta-yD-Syx" secondAttribute="trailing" id="msp-Hx-WKY"/>
                 <constraint firstItem="jmb-Ai-zUG" firstAttribute="top" secondItem="NPI-hp-HWZ" secondAttribute="bottom" constant="17" id="yLQ-2n-AIs"/>
