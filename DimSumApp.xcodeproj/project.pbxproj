@@ -56,6 +56,8 @@
 		D66D28ED22E772E3000E72B5 /* ShrimpNoodleRollsM.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D66D28E122E772E2000E72B5 /* ShrimpNoodleRollsM.mp3 */; };
 		D66D28F022E7E9D6000E72B5 /* UserDefaultsKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66D28EF22E7E9D6000E72B5 /* UserDefaultsKeys.swift */; };
 		D6F20C2222E8204B0044560B /* VC+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F20C2122E8204B0044560B /* VC+Extensions.swift */; };
+		D6F20C2422E823F40044560B /* DataPersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F20C2322E823F40044560B /* DataPersistenceManager.swift */; };
+		D6F20C2822E824600044560B /* DimSumReviewsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F20C2722E824600044560B /* DimSumReviewsManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -112,6 +114,8 @@
 		D66D28E122E772E2000E72B5 /* ShrimpNoodleRollsM.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ShrimpNoodleRollsM.mp3; sourceTree = "<group>"; };
 		D66D28EF22E7E9D6000E72B5 /* UserDefaultsKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsKeys.swift; sourceTree = "<group>"; };
 		D6F20C2122E8204B0044560B /* VC+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VC+Extensions.swift"; sourceTree = "<group>"; };
+		D6F20C2322E823F40044560B /* DataPersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPersistenceManager.swift; sourceTree = "<group>"; };
+		D6F20C2722E824600044560B /* DimSumReviewsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DimSumReviewsManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,6 +226,7 @@
 				D605DAC222D7A00800CB811E /* DimSumReview.swift */,
 				D605DAC422D7A02E00CB811E /* RestaurantReview.swift */,
 				45830EFE22E3BE8900D6EF49 /* User.swift */,
+				D6F20C2722E824600044560B /* DimSumReviewsManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -317,6 +322,7 @@
 			isa = PBXGroup;
 			children = (
 				D66D28EF22E7E9D6000E72B5 /* UserDefaultsKeys.swift */,
+				D6F20C2322E823F40044560B /* DataPersistenceManager.swift */,
 			);
 			path = "Local Data Management";
 			sourceTree = "<group>";
@@ -517,9 +523,11 @@
 				D605DAC722D7A08D00CB811E /* RestaurantDetailController.swift in Sources */,
 				D605DA9522D78F0D00CB811E /* AppDelegate.swift in Sources */,
 				45830EF122DFBE9500D6EF49 /* FoodCollectionViewCell.swift in Sources */,
+				D6F20C2822E824600044560B /* DimSumReviewsManager.swift in Sources */,
 				D605DACF22D7A50000CB811E /* RestaurantMapDetailController.swift in Sources */,
 				D605DAC322D7A00800CB811E /* DimSumReview.swift in Sources */,
 				45830F0C22E6730900D6EF49 /* FilterTableViewCell.swift in Sources */,
+				D6F20C2422E823F40044560B /* DataPersistenceManager.swift in Sources */,
 				D605DACB22D7A1DD00CB811E /* RestaurantWriteReviewController.swift in Sources */,
 				D605DAB622D79E3100CB811E /* RestaurantController.swift in Sources */,
 			);

@@ -78,14 +78,39 @@ class DimSumDetailController: UIViewController {
         if let _ = favorites[dimSum.foodEng] {
             favorites[dimSum.foodEng] = nil
             navigationItem.rightBarButtonItem?.image = UIImage(named: "like")
+            showAlert(title: "Dim Sum Unfavorited", message: nil)
         } else {
             favorites[dimSum.foodEng] = true
             navigationItem.rightBarButtonItem?.image = UIImage(named: "like_filled")
+            showAlert(title: "Dim Sum Favorited", message: nil)
         }
         defaults.set(favorites, forKey: UserDefaultsKeys.dimSumFavorites)
     }
     
     @IBAction func openReviewsScreen(_ sender: UIButton) {
+//        guard let bookingController = UIStoryboard(name: "BookService", bundle: nil).instantiateViewController(withIdentifier: "BookingController") as? BookingViewController else {return}
+//        guard let provider = provider else {return}
+//        bookingController.rating = rating ?? 5.0
+//        bookingController.provider = provider
+//        let bookingNavController = UINavigationController(rootViewController: bookingController)
+//        self.present(bookingNavController, animated: true, completion: nil)
         
+        
+        
+//        let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
+//
+//        //get view controller in a variable
+//        guard let viewController = storyboard.instantiateViewController(withIdentifier: "secondDetail") as? SecondDetailViewController else { return }
+//
+//        //this will put a layer and see through it when it segues. Make sure the opaque is 20%
+//        //*this makes it come up from bottom up
+//        viewController.modalPresentationStyle = .overCurrentContext //the view will show
+//
+//        viewController.animal = myAnimals2[indexPath.row]
+//
+//        //*Make it Segue
+//        //controller represents the ViewController I want to transition to
+//        //complete is code that I want to run after this function is executed
+//        present(viewController, animated: true, completion: nil)
     }
 }
