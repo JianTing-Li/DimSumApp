@@ -18,19 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Yho-eQ-WLb">
-                                <rect key="frame" x="0.0" y="88" width="331" height="45"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </searchBar>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RyM-EQ-ZnN">
-                                <rect key="frame" x="332" y="88" width="82" height="45.5"/>
-                                <state key="normal" image="filter"/>
-                                <connections>
-                                    <segue destination="ONj-Or-0In" kind="presentation" id="0BR-QI-7Ol"/>
-                                </connections>
-                            </button>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="rHv-tc-QSy">
-                                <rect key="frame" x="0.0" y="133" width="414" height="763"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                                 <color key="backgroundColor" red="1" green="0.83821801443927391" blue="0.93687209850109932" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="2K2-US-Wk6">
                                     <size key="itemSize" width="248" height="171"/>
@@ -53,18 +42,10 @@
                         </subviews>
                         <color key="backgroundColor" red="0.81697009860000003" green="0.84661611189999997" blue="0.97723214250000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="RyM-EQ-ZnN" firstAttribute="top" secondItem="Yho-eQ-WLb" secondAttribute="top" id="1rx-Xx-8vc"/>
-                            <constraint firstItem="rHv-tc-QSy" firstAttribute="height" secondItem="A1G-1c-Kxh" secondAttribute="height" constant="-133" id="3Wp-1f-keb"/>
-                            <constraint firstItem="RyM-EQ-ZnN" firstAttribute="leading" secondItem="Yho-eQ-WLb" secondAttribute="trailing" constant="1" id="Ggi-Xj-y3m"/>
-                            <constraint firstItem="rHv-tc-QSy" firstAttribute="leading" secondItem="DEZ-N9-Sy3" secondAttribute="leading" id="PF6-rK-RBg"/>
-                            <constraint firstItem="Yho-eQ-WLb" firstAttribute="width" secondItem="A1G-1c-Kxh" secondAttribute="width" multiplier="0.8" id="PnG-hE-opy"/>
-                            <constraint firstItem="DEZ-N9-Sy3" firstAttribute="trailing" secondItem="rHv-tc-QSy" secondAttribute="trailing" id="fIU-Y3-6Om"/>
-                            <constraint firstItem="Yho-eQ-WLb" firstAttribute="top" secondItem="DEZ-N9-Sy3" secondAttribute="top" id="i4H-jQ-ASY"/>
-                            <constraint firstItem="rHv-tc-QSy" firstAttribute="top" secondItem="Yho-eQ-WLb" secondAttribute="bottom" id="jMu-FQ-1zw"/>
-                            <constraint firstItem="RyM-EQ-ZnN" firstAttribute="height" secondItem="Yho-eQ-WLb" secondAttribute="height" constant="0.5" id="nuc-XL-U80"/>
-                            <constraint firstItem="Yho-eQ-WLb" firstAttribute="height" secondItem="A1G-1c-Kxh" secondAttribute="height" multiplier="0.05" id="sb6-ln-XAG"/>
-                            <constraint firstItem="DEZ-N9-Sy3" firstAttribute="trailing" secondItem="RyM-EQ-ZnN" secondAttribute="trailing" id="thr-zR-DMR"/>
-                            <constraint firstItem="Yho-eQ-WLb" firstAttribute="leading" secondItem="DEZ-N9-Sy3" secondAttribute="leading" id="uKS-9m-KcU"/>
+                            <constraint firstItem="rHv-tc-QSy" firstAttribute="leading" secondItem="DEZ-N9-Sy3" secondAttribute="leading" id="1Z2-gv-mpm"/>
+                            <constraint firstItem="rHv-tc-QSy" firstAttribute="trailing" secondItem="DEZ-N9-Sy3" secondAttribute="trailing" id="3KD-0e-Hpn"/>
+                            <constraint firstItem="rHv-tc-QSy" firstAttribute="top" secondItem="DEZ-N9-Sy3" secondAttribute="top" id="Jd9-Pp-Gnj"/>
+                            <constraint firstAttribute="bottom" secondItem="rHv-tc-QSy" secondAttribute="bottom" id="wu7-G9-gJV"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="DEZ-N9-Sy3"/>
                     </view>
@@ -73,7 +54,6 @@
                     </navigationItem>
                     <connections>
                         <outlet property="foodCollectionView" destination="rHv-tc-QSy" id="Mdu-Aj-CRC"/>
-                        <outlet property="serachBar" destination="Yho-eQ-WLb" id="WAy-P3-UqT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5oq-u1-s3e" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -192,7 +172,4 @@
             <point key="canvasLocation" x="1073.913043478261" y="116.51785714285714"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="filter" width="24" height="24"/>
-    </resources>
 </document>

@@ -16,7 +16,7 @@ class DimSumReviewsController: UITableViewController {
     private var reviews = [DimSumReview]() {
         didSet {
             DispatchQueue.main.async {
-                self.dimSumReviewsTableView.reloadData()
+                self.tableView.reloadData()
             }
         }
     }
@@ -36,7 +36,7 @@ class DimSumReviewsController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = dimSumReviewsTableView.dequeueReusableCell(withIdentifier: "DimSumReviewCell") as? DimSumReviewCell else { return UITableViewCell() }
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "DimSumReviewCell") as? DimSumReviewCell else { return UITableViewCell() }
         let review = reviews[indexPath.row]
         cell.configureCell(review: review)
         return cell

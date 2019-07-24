@@ -10,10 +10,13 @@ import UIKit
 
 class DimSumController: UIViewController {
     @IBOutlet weak var foodCollectionView: UICollectionView!
-    @IBOutlet weak var serachBar: UISearchBar!
     
     var allDimSums = DimSum.getAllDimSums()
-    var allReviews = DimSumReviewsManager.fetchAllReviews()
+    var allReviews = [DimSumReview]() {
+        didSet {
+            foodCollectionView.reloadData()
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +24,12 @@ class DimSumController: UIViewController {
         foodCollectionView.register(nib, forCellWithReuseIdentifier: "FoodCell")
         foodCollectionView.dataSource = self
         foodCollectionView.delegate = self
+        title = "Dim Sums"
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        allReviews = DimSumReviewsManager.fetchAllReviews()
     }
 
 }

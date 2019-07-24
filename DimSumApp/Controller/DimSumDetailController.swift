@@ -32,6 +32,10 @@ class DimSumDetailController: UIViewController {
         super.viewDidLoad()
         configureUI()
     }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        reviews = DimSumReviewsManager.fetchAllReviews().filter { $0.dimSumFoodEng == dimSum.foodEng }
+    }
     
     private func configureUI() {
         setFavoriteIcon()
@@ -41,7 +45,6 @@ class DimSumDetailController: UIViewController {
         dimSumDescriptionTextView.text = dimSum.foodDescription
         dimSumRating.settings.updateOnTouch = false
         dimSumRating.settings.fillMode = .half
-        reviews = DimSumReviewsManager.fetchAllReviews().filter { $0.dimSumFoodEng == dimSum.foodEng }
     }
     
     private func setRating() {
