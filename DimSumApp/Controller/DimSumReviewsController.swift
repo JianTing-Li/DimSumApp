@@ -22,11 +22,13 @@ class DimSumReviewsController: UITableViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = dimSum.foodEng
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         reviews = DimSumReviewsManager.fetchAllReviews().filter { $0.dimSumFoodEng == dimSum.foodEng }
+        print("Hello")
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -38,5 +40,16 @@ class DimSumReviewsController: UITableViewController {
         let review = reviews[indexPath.row]
         cell.configureCell(review: review)
         return cell
+    }
+    
+    
+    @IBAction func goToCreateReviewPage(_ sender: UIBarButtonItem) {
+        let reviewsStoryboard = UIStoryboard.init(name: "Reviews", bundle: nil)
+        
+        guard let createDimReviewVC = reviewsStoryboard.instantiateViewController(withIdentifier: "CreateDimReviewVC") as? DimSumWriteReviewController else { return }
+        createDimReviewVC.dimSum = dimSum
+        let navController = UINavigationController(rootViewController: createDimReviewVC)
+        navController.modalPresentationStyle = .overFullScreen
+        present(navController, animated: true, completion: nil)
     }
 }
