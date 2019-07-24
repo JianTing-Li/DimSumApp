@@ -59,13 +59,15 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="QL3-W8-sOe">
-                        <barButtonItem key="leftBarButtonItem" title="Dismiss" id="Lsm-bL-gKT"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="compose" id="bs9-VQ-loK">
                             <connections>
                                 <segue destination="nPG-5e-zOK" kind="presentation" id="Z7r-mL-4Cl"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="dimSumReviewsTableView" destination="AJl-27-CcI" id="aAJ-fQ-Nba"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tog-vb-GvR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -79,14 +81,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Iwj-Dm-F5i">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Iwj-Dm-F5i">
                                 <rect key="frame" x="20" y="290" width="374" height="269"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6V4-ym-3p3" customClass="CosmosView" customModule="Cosmos">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6V4-ym-3p3" customClass="CosmosView" customModule="Cosmos">
                                 <rect key="frame" x="84.5" y="215" width="245" height="45"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <userDefinedRuntimeAttributes>
@@ -122,7 +124,7 @@
         <!--Navigation Controller-->
         <scene sceneID="lL0-BG-pOP">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mxv-Dy-48B" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="DimSumReviewsNav" automaticallyAdjustsScrollViewInsets="NO" id="mxv-Dy-48B" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="V2J-0y-oxT">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>

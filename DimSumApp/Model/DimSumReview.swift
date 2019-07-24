@@ -10,8 +10,9 @@
 import Foundation
 
 struct DimSumReview: Codable {
-    let dimSumID: String?
+    let dimSumFoodEng: String
     let userID: String?
+    let reviewID: String?
     let rating: Double
     let description: String
     let location: String?
