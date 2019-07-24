@@ -19,6 +19,11 @@ class DimSumDetailController: UIViewController {
     
     public var dimSum: DimSum!
     private var audioPlayer: AVAudioPlayer?
+    private var reviews = [DimSumReview]() {
+        didSet {
+            if self.reviews.count > 0 { setRating() }
+        }
+    }
     
     let defaults = UserDefaults.standard
     private lazy var favorites = defaults.object(forKey: UserDefaultsKeys.dimSumFavorites) as? [String : Bool] ?? [String : Bool]()
@@ -29,16 +34,18 @@ class DimSumDetailController: UIViewController {
     }
     
     private func configureUI() {
+        setFavoriteIcon()
         engLabel.text = dimSum.foodEng
         chineseLabel.text = dimSum.foodChi
         dimSumImage.image = UIImage.init(named: dimSum.foodEng.components(separatedBy: " ").joined() + "0")
         dimSumDescriptionTextView.text = dimSum.foodDescription
-        setRating()
-        setFavoriteIcon()
+        dimSumRating.settings.updateOnTouch = false
+        dimSumRating.settings.fillMode = .half
+        reviews = DimSumReviewsManager.fetchAllReviews().filter { $0.dimSumFoodEng == dimSum.foodEng }
     }
     
     private func setRating() {
-        
+        dimSumRating.rating = reviews.map { $0.rating }.reduce(0,+) / Double(reviews.count)
     }
     
     private func setFavoriteIcon() {
@@ -88,6 +95,9 @@ class DimSumDetailController: UIViewController {
     }
     
     @IBAction func openReviewsScreen(_ sender: UIButton) {
-
+        let reviewsStoryboard = UIStoryboard(name: "Reviews", bundle: nil)
+        let destinationVC = reviewsStoryboard.instantiateViewController(withIdentifier: "DimSumReviewsVC") as! DimSumReviewsController
+        destinationVC.dimSum = dimSum
+        self.navigationController?.pushViewController(destinationVC, animated: true)
     }
 }
