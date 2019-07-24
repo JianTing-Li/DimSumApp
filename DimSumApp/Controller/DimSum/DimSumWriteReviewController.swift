@@ -18,45 +18,49 @@ class DimSumWriteReviewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // setup cosmos
-//        // Called when user finishes changing the rating by lifting the finger from the view.
-//        // This may be a good place to save the rating in the database or send to the server.
-//        cosmosView.didFinishTouchingCosmos = { rating in }
-        
-        
-        // setup text field (refer to fellow blogger)
+        configureTextView()
+        configureRatingCosmos()
     }
     
+    private func configureRatingCosmos() {
+        rating.didFinishTouchingCosmos = { rating in
+            self.capturedRating = rating
+        }
+    }
+    
+    private func configureTextView() {
+        reviewTextView.delegate = self
+        reviewTextView.textColor = .lightGray
+        reviewTextView.text = "Write your review here..."
+    }
     @IBAction func cancelButtonPressed(_ sender: UIBarButtonItem) {
         dismiss(animated: true, completion: nil)
     }
     
     @IBAction func postButtonPressed(_ sender: UIBarButtonItem) {
-        // check if user give a rating and description (make sure it's not empty)
-        // instatiate review and save to data persistence
+        guard let capturedRating = capturedRating,
+            let reviewDescription = reviewTextView.text,
+            !reviewDescription.isEmpty else {
+                showAlert(title: "Missing Fields", message: "Make sure you give a rating and review.")
+                return
+        }
+        let dimSumReview = DimSumReview(dimSumFoodEng: <#T##String#>, userID: nil, reviewID: nil, rating: capturedRating, description: reviewDescription, location: nil)
     }
     
 }
 
-
-//private func configureTextView() {
-//    configureInputAccessoryView()
-//    blogDescriptionTextView.delegate = self
-//    blogDescriptionTextView.textColor = .lightGray
-//    blogDescriptionTextView.text = Constants.BlogDescriptionPlaceholder
-//}
-//
-//extension AddBlogController: UITextViewDelegate {
-//    func textViewDidBeginEditing(_ textView: UITextView) {
-//        if textView.text == Constants.BlogDescriptionPlaceholder {
-//            textView.textColor = .black
-//            textView.text = ""
-//        }
-//    }
-//    func textViewDidEndEditing(_ textView: UITextView) {
-//        if textView.text == "" {
-//            textView.textColor = .lightGray
-//            textView.text = Constants.BlogDescriptionPlaceholder
-//        }
-//    }
-//}
+extension DimSumWriteReviewController: UITextViewDelegate {
+    func textViewDidBeginEditing(_ textView: UITextView) {
+        if textView.text == "Write your review here..." {
+            textView.textColor = .black
+            textView.text = ""
+        }
+    }
+    
+    func textViewDidEndEditing(_ textView: UITextView) {
+        if textView.text == "" {
+            textView.textColor = .lightGray
+            textView.text = "Write your review here..."
+        }
+    }
+}
