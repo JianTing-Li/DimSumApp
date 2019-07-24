@@ -113,9 +113,21 @@
                         <viewLayoutGuide key="safeArea" id="cY7-xY-FC8"/>
                     </view>
                     <navigationItem key="navigationItem" id="vKe-nT-4tV">
-                        <barButtonItem key="leftBarButtonItem" title="Item" systemItem="cancel" id="Brr-yZ-J5V"/>
-                        <barButtonItem key="rightBarButtonItem" title="Post" id="X3l-G1-AOr"/>
+                        <barButtonItem key="leftBarButtonItem" title="Item" systemItem="cancel" id="Brr-yZ-J5V">
+                            <connections>
+                                <action selector="cancelButtonPressed:" destination="UKl-VG-8uZ" id="Qbx-Xa-cF2"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Post" id="X3l-G1-AOr">
+                            <connections>
+                                <action selector="postButtonPressed:" destination="UKl-VG-8uZ" id="Tf5-jl-Ira"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="rating" destination="6V4-ym-3p3" id="set-dx-6Wq"/>
+                        <outlet property="reviewTextView" destination="Iwj-Dm-F5i" id="e88-4E-5qg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="832-ei-X10" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
