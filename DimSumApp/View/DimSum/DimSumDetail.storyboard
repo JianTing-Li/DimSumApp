@@ -13,7 +13,7 @@
         <!--Dim Sum Detail Controller-->
         <scene sceneID="cXk-Md-46Y">
             <objects>
-                <viewController id="ciP-pg-Lru" customClass="DimSumDetailController" customModule="DimSumApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DimSumDetailVC" id="ciP-pg-Lru" customClass="DimSumDetailController" customModule="DimSumApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0z8-S3-ygU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

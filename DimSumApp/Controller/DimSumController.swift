@@ -12,7 +12,7 @@ class DimSumController: UIViewController {
     @IBOutlet weak var foodCollectionView: UICollectionView!
     @IBOutlet weak var serachBar: UISearchBar!
     
-    var dimSum = DimSum.getAllDimSums()
+    var allDimSums = DimSum.getAllDimSums()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +28,14 @@ extension DimSumController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: 800/2, height: 500/2)
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let dimSum = allDimSums[indexPath.row]
+        let dimSumDetailStoryboard = UIStoryboard.init(name: "DimSumDetail", bundle: nil)
+        let destinationVC = dimSumDetailStoryboard.instantiateViewController(withIdentifier: "DimSumDetailVC") as! DimSumDetailController
+        destinationVC.dimSum = dimSum
+        self.navigationController?.pushViewController(destinationVC, animated: true)
+    }
 }
 
 extension DimSumController: UICollectionViewDataSource {
@@ -36,7 +44,7 @@ extension DimSumController: UICollectionViewDataSource {
         guard let foodCell = collectionView.dequeueReusableCell(withReuseIdentifier: "FoodCell", for: indexPath) as? FoodCollectionViewCell else {
             return UICollectionViewCell()
         }
-        let selectedDimSum = dimSum[indexPath.row]
+        let selectedDimSum = allDimSums[indexPath.row]
         foodCell.engFoodLabel.text = selectedDimSum.foodEng
         foodCell.chineseFoodLabel.text = selectedDimSum.foodChi
         let imageName = selectedDimSum.foodEng.components(separatedBy: .whitespaces).joined()
@@ -46,6 +54,6 @@ extension DimSumController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return dimSum.count
+        return allDimSums.count
     }
 }
