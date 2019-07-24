@@ -58,6 +58,7 @@
 		D6F20C2222E8204B0044560B /* VC+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F20C2122E8204B0044560B /* VC+Extensions.swift */; };
 		D6F20C2422E823F40044560B /* DataPersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F20C2322E823F40044560B /* DataPersistenceManager.swift */; };
 		D6F20C2822E824600044560B /* DimSumReviewsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F20C2722E824600044560B /* DimSumReviewsManager.swift */; };
+		D6F20C2A22E8353B0044560B /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F20C2922E8353B0044560B /* Double+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -116,6 +117,7 @@
 		D6F20C2122E8204B0044560B /* VC+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VC+Extensions.swift"; sourceTree = "<group>"; };
 		D6F20C2322E823F40044560B /* DataPersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPersistenceManager.swift; sourceTree = "<group>"; };
 		D6F20C2722E824600044560B /* DimSumReviewsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DimSumReviewsManager.swift; sourceTree = "<group>"; };
+		D6F20C2922E8353B0044560B /* Double+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -331,6 +333,7 @@
 			isa = PBXGroup;
 			children = (
 				D6F20C2122E8204B0044560B /* VC+Extensions.swift */,
+				D6F20C2922E8353B0044560B /* Double+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -519,6 +522,7 @@
 				45830EFD22E3BC6A00D6EF49 /* DimSum.swift in Sources */,
 				45830EFF22E3BE8900D6EF49 /* User.swift in Sources */,
 				D605DAAB22D7938800CB811E /* TabBarController.swift in Sources */,
+				D6F20C2A22E8353B0044560B /* Double+Extensions.swift in Sources */,
 				D605DABC22D79F1600CB811E /* DimSumDetailController.swift in Sources */,
 				D605DAC722D7A08D00CB811E /* RestaurantDetailController.swift in Sources */,
 				D605DA9522D78F0D00CB811E /* AppDelegate.swift in Sources */,

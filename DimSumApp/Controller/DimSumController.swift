@@ -13,6 +13,7 @@ class DimSumController: UIViewController {
     @IBOutlet weak var serachBar: UISearchBar!
     
     var allDimSums = DimSum.getAllDimSums()
+    var allReviews = DimSumReviewsManager.fetchAllReviews()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,16 +41,11 @@ extension DimSumController: UICollectionViewDelegateFlowLayout {
 
 extension DimSumController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
         guard let foodCell = collectionView.dequeueReusableCell(withReuseIdentifier: "FoodCell", for: indexPath) as? FoodCollectionViewCell else {
             return UICollectionViewCell()
         }
         let selectedDimSum = allDimSums[indexPath.row]
-        foodCell.engFoodLabel.text = selectedDimSum.foodEng
-        foodCell.chineseFoodLabel.text = selectedDimSum.foodChi
-        let imageName = selectedDimSum.foodEng.components(separatedBy: .whitespaces).joined()
-        print(imageName)
-        foodCell.foodImageView.image = UIImage(named: "\(imageName)0")
+        foodCell.configureCell(selectedDimSum: selectedDimSum, allReviews: allReviews)
         return foodCell
     }
     
