@@ -16,6 +16,7 @@ class DimSumController: UIViewController {
         didSet {
             foodCollectionView.reloadData()
         }
+        // comment
     }
     
     override func viewDidLoad() {
